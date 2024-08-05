@@ -6,14 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Toko Keluarga</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Poppins, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      overflow-x: hidden;
     }
     .marquee {
       background-color: blue;
@@ -54,47 +57,38 @@
       font-size: 0.875em;
       color: #6b7280;
     }
-    .buttons {
-      margin-top: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
-    }
-    .button {
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 1em;
-      font-weight: medium;
-      text-decoration: none;
-      text-align: center;
-      transition: background-color 0.2s, color 0.2s;
-    }
-    .button.view-website {
-      border: 1px solid #e2e8f0;
-      color: #6b7280;
-    }
-    .button.view-website:hover {
-      background-color: #f9fafb;
-      color: #4b5563;
-    }
-    .button.create-post {
-      background-color: #4f46e5;
-      color: white;
-    }
-    .button.create-post:hover {
-      background-color: #4338ca;
-    }
     @media (min-width: 640px) {
       .header {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
       }
-      .buttons {
-        flex-direction: row;
-        margin-top: 0;
-      }
+    }
+
+    /* Style for search bar */
+    .search-bar {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 16px;
+      display: flex;
+    }
+    .search-bar input[type="text"] {
+      flex-grow: 1;
+      padding: 12px 24px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px 0 0 8px;
+      font-size: 1em;
+    }
+    .search-bar button {
+      padding: 12px 24px;
+      background-color: #4f46e5;
+      color: white;
+      border: 1px solid #4f46e5;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #4338ca;
     }
 
     /* Style for product boxes */
@@ -163,6 +157,7 @@
       background-color: #1f2937;
       color: white;
       text-align: center;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -175,11 +170,11 @@
       <div class="header">
         <div>
           <h1 class="title">Selamat Datang Di Toko Keluarga !</h1>
-          <p class="subtitle">Let's write a new blog post! 🎉</p>
+          <p class="subtitle">Nikmati Belanja Online Bersama Kami</p>
         </div>
-        <div class="buttons">
-          <a href="#" class="button view-website">View Website</a>
-          <a href="#" class="button create-post">Create Post</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Cari produk...">
+          <button type="button">Cari</button>
         </div>
       </div>
     </div>
@@ -252,4 +247,4 @@
     Berkah Development
   </footer>
 </body>
-</html>
+  </html>
