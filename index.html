@@ -86,33 +86,56 @@
     background-color: #4338ca;
   }
 </style>
+<script>
+        function searchProduct() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const products = document.getElementsByClassName('product-box');
+            
+            for (let i = 0; i < products.length; i++) {
+                const productDescription = products[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+                
+                if (productDescription.includes(input)) {
+                    products[i].style.display = '';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+	</script>
 </head>
 <body>
 	<div class="marquee">
-       <span>Dapatkan Diskon Menarik Untuk Pembelian Hari Ini !</span>
+        <span>Dapatkan Diskon Menarik Untuk Pembelian Hari Ini !</span>
     </div>
     <div class="header">
     	<div class="title">
-    <h1>Selamat Datang Di Toko Keluarga ! </h1>
-    </div>
-    <div class="subtitle">
-    <h4>Nikmati Belanja Online Bersama Kami</h4>
-    </div>
-    <div class="search-bar">
-          <input type="text" placeholder="Cari produk...">
-          <button type="button">Cari</button>
+    	    <h1>Selamat Datang Di Toko Keluarga ! </h1>
+        </div>
+        <div class="subtitle">
+            <h4>Nikmati Belanja Online Bersama Kami</h4>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Cari produk...">
+            <button type="button" onclick="searchProduct()">Cari</button>
         </div>
     </div>
     <div class="container">
-    <div class="product-grid">
-      <!-- First Row of Products -->
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-1.jpg" alt="Produk 1">
-        <p>Deskripsi produk 1</p>
-       <div class="price">Rp 100.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%201" class="whatsapp-button">Pesan via WhatsApp</a>
+        <div class="product-grid">
+            <!-- First Row of Products -->
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-1.jpg" alt="Produk 1">
+                <p>Deskripsi produk 1</p>
+                <div class="price">Rp 100.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%201" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-2.jpg" alt="Produk 2">
+                <p>Deskripsi produk 2</p>
+                <div class="price">Rp 150.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%202" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <!-- Tambahkan produk lainnya di sini -->
         </div>
-      </div>
     </div>
 </body>
 </html>
