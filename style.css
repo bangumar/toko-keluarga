@@ -1,0 +1,132 @@
+body {
+  		font-variant-numeric: Poppins;
+  	}
+  	.marquee {
+  		background-color: blue;
+  		top: 0;
+  		width: 100%;
+  		color: white;
+  		overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+  	}
+  	.marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+     .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+      flex-grow: 1;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .header .title {
+      font-size: 1em;
+      font-weight: bold;
+      color: #1a202c;
+    }
+    .header .subtitle {
+      margin-top: 8px;
+      font-size: 0.875em;
+      color: #6b7280;
+    }
+    @media (min-width: 640px) {
+      .header {flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+  /* Style for search bar */
+  .search-bar {
+    width: 100%;
+    max-width: 300px; /* Lebar maksimum dikurangi menjadi 300px */
+    margin-top: 16px;
+    position: relative;
+    display: flex;
+  }
+  .search-bar input[type="text"] {
+    flex-grow: 1;
+    width: 100%;
+    padding: 8px 16px; /* Padding dikurangi */
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.875em; /* Ukuran font dikurangi */
+    box-sizing: border-box;
+  }
+  .search-bar button {
+    padding: 8px 16px; /* Padding dikurangi */
+    background-color: #4f46e5;
+    color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 0.875em; /* Ukuran font dikurangi */
+    box-sizing: border-box;
+  }
+  .search-bar button:hover {
+    background-color: #4338ca;
+  }
+  /* Style untuk container dan produk */
+.container {
+    display: flex;
+    justify-content: center;
+}
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Jarak antar produk */
+    flex-wrap: wrap; /* Agar produk dapat membungkus ke baris berikutnya jika tidak muat */
+}
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.whatsapp-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
