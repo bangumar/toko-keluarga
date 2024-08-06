@@ -85,6 +85,50 @@
   .search-bar button:hover {
     background-color: #4338ca;
   }
+/* Style untuk container dan produk */
+.container {
+    display: flex;
+    justify-content: center;
+}
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Jarak antar produk */
+    flex-wrap: wrap; /* Agar produk dapat membungkus ke baris berikutnya jika tidak muat */
+}
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.whatsapp-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px
+}
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+	
 </style>
 <script>
         function searchProduct() {
