@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Toko Keluarga</title>
-<script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jualan Online</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
         function searchProduct() {
             const input = document.getElementById('search-input').value.toLowerCase();
             const products = document.getElementsByClassName('product-box');
@@ -21,247 +22,56 @@
             }
         }
 	</script>
-  <style>
-    body {
-      font-family: Poppins, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-    .marquee {
-      background-color: blue;
-      width: 100%;
-      color: white;
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-    }
-    .marquee span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: marquee 10s linear infinite;
-    }
-    @keyframes marquee {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-100%, 0); }
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px;
-      flex-grow: 1;
-    }
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .header .title {
-      font-size: 2em;
-      font-weight: bold;
-      color: #1a202c;
-    }
-    .header .subtitle {
-      margin-top: 8px;
-      font-size: 0.875em;
-      color: #6b7280;
-    }
-    @media (min-width: 640px) {
-      .header {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-      }
-    }
-
-    /* Style for search bar */
-  .search-bar {
-    width: 100%;
-    max-width: 300px; /* Lebar maksimum dikurangi menjadi 300px */
-    margin-top: 16px;
-    position: relative;
-    display: flex;
-  }
-  .search-bar input[type="text"] {
-    flex-grow: 1;
-    width: 100%;
-    padding: 8px 16px; /* Padding dikurangi */
-    border-radius: 8px 0 0 8px;
-    border: 1px solid #e5e7eb;
-    font-size: 0.875em; /* Ukuran font dikurangi */
-    box-sizing: border-box;
-  }
-  .search-bar button {
-    padding: 8px 16px; /* Padding dikurangi */
-    background-color: #4f46e5;
-    color: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 0 8px 8px 0;
-    cursor: pointer;
-    font-size: 0.875em; /* Ukuran font dikurangi */
-    box-sizing: border-box;
-  }
-  .search-bar button:hover {
-    background-color: #4338ca;
-  }
-    /* Style for product boxes */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 16px;
-      margin-top: 32px;
-    }
-    @media (min-width: 640px) {
-      .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (min-width: 1024px) {
-      .product-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    .product-box {
-      background-color: #f3f4f6;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 16px;
-      text-align: center;
-    }
-    .product-box img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 16px;
-    }
-    .product-box h2 {
-      font-size: 1.25em;
-      font-weight: bold;
-      margin-bottom: 8px;
-      color: #1f2937;
-    }
-    .product-box p {
-      color: #4b5563;
-      margin-bottom: 16px;
-    }
-    .product-box .price {
-      font-size: 1.5em;
-      color: #4f46e5;
-      margin-bottom: 16px;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 16px;
-      transition: background-color 0.2s;
-    }
-    .whatsapp-button:hover {
-      background-color: #1ebe5b;
-    }
-
-    /* Footer styling */
-    footer {
-      padding: 16px;
-      background-color: #1f2937;
-      color: white;
-      text-align: center;
-      margin-top: auto;
-    }
-  </style>
 </head>
 <body>
-  <div class="marquee">
-    <span>Dapatkan Diskon Menarik Untuk Pembelian Hari Ini !</span>
-  </div>
-  <header>
-    <div class="container">
-      <div class="header">
-        <div>
-         <h1 class="title">Selamat Datang Di Toko Keluarga !</h1>
-          <p class="subtitle">Nikmati Belanja Online Bersama Kami</p>
+	<div class="marquee">
+       <span>Dapatkan Diskon Menarik Untuk Pembelian Hari Ini !</span>
+    </div>
+    <div class="header">
+    	<div class="title">
+    	    <h1>Selamat Datang Di Toko Keluarga ! </h1>
+        </div>
+        <div class="subtitle">
+            <h4>Nikmati Belanja Online Bersama Kami</h4>
         </div>
         <div class="search-bar">
-          <input type="text" placeholder="Cari produk...">
-          <button type="button">Cari</button>
+            <input type="text" id="search-input" placeholder="Cari produk...">
+            <button type="button" onclick="searchProduct()">Cari</button>
         </div>
-      </div>
     </div>
-  </header>
-  <div class="container">
-    <div class="product-grid">
-      <!-- First Row of Products -->
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-1.jpg" alt="Produk 1">
-        <h2>Produk 1</h2>
-        <p>Deskripsi produk 1</p>
-        <div class="price">Rp 100.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%201" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-2.jpg" alt="Produk 2">
-        <h2>Produk 2</h2>
-        <p>Deskripsi produk 2</p>
-        <div class="price">Rp 200.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%202" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-3.jpg" alt="Produk 3">
-        <h2>Produk 3</h2>
-        <p>Deskripsi produk 3</p>
-        <div class="price">Rp 300.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%203" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-4.jpg" alt="Produk 4">
-        <h2>Produk 4</h2>
-        <p>Deskripsi produk 4</p>
-        <div class="price">Rp 400.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%204" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-
-      <!-- Second Row of Products -->
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-5.jpg" alt="Produk 5">
-        <h2>Produk 5</h2>
-        <p>Deskripsi produk 5</p>
-        <div class="price">Rp 500.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%205" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-6.jpg" alt="Produk 6">
-        <h2>Produk 6</h2>
-        <p>Deskripsi produk 6</p>
-        <div class="price">Rp 600.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%206" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-7.jpg" alt="Produk 7">
-        <h2>Produk 7</h2>
-        <p>Deskripsi produk 7</p>
-        <div class="price">Rp 700.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%207" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
-      <div class="product-box">
-        <img src="link-ke-gambar-produk-8.jpg" alt="Produk 8">
-        <h2>Produk 8</h2>
-        <p>Deskripsi produk 8</p>
-        <div class="price">Rp 800.000</div>
-        <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%208" class="whatsapp-button">Pesan via WhatsApp</a>
-      </div>
+    <div class="container">
+        <div class="product-grid">
+            <!-- First Row of Products -->
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-1.jpg" alt="Produk 1">
+                <p>Deskripsi produk 1</p>
+                <div class="price">Rp 100.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%201" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-2.jpg" alt="Produk 2">
+                <p>Deskripsi produk 2</p>
+                <div class="price">Rp 150.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%202" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-3.jpg" alt="Produk 3">
+                <p>Deskripsi produk 3</p>
+                <div class="price">Rp 150.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%202" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <div class="product-box">
+                <img src="link-ke-gambar-produk-4.jpg" alt="Produk 4">
+                <p>Deskripsi produk 4</p>
+                <div class="price">Rp 150.000</div>
+                <a href="https://wa.me/6281298547267?text=Halo,%20saya%20ingin%20memesan%20Produk%202" class="whatsapp-button">Pesan via WhatsApp</a>
+            </div>
+            <!-- Tambahkan produk lainnya di sini -->
+        </div>
     </div>
-  </div>
-  <footer>
-    <p>&copy; 2024 Toko Keluarga. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+    	<p>&copy; 2024 Toko Keluarga. All rights reserved.</p>
+    </footer>
 </body>
 </html>
